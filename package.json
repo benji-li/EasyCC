@@ -1,0 +1,24 @@
+{
+  "name": "easycap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjelloo/easycap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjelloo/easycap/issues"
+  },
+  "homepage": "https://github.com/benjelloo/easycap#readme",
+  "dependencies": {
+    "@google-cloud/speech": "^4.2.0",
+    "node-record-lpcm16": "^1.0.1",
+    "sox": "^0.1.0"
+  }
+}

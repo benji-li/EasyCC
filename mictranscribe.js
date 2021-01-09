@@ -9,9 +9,9 @@ const client = new speech.SpeechClient();
 /**
  * TODO(developer): Uncomment the following lines before running the sample.
  */
-// const encoding = 'Encoding of the audio file, e.g. LINEAR16';
-// const sampleRateHertz = 16000;
-// const languageCode = 'BCP-47 language code, e.g. en-US';
+const encoding = 'LINEAR16';
+const sampleRateHertz = 16000;
+const languageCode = 'en-US';
 
 const request = {
   config: {
@@ -19,7 +19,7 @@ const request = {
     sampleRateHertz: sampleRateHertz,
     languageCode: languageCode,
   },
-  interimResults: false, // If you want interim results, set this to true
+  interimResults: true, // If you want interim results, set this to true
 };
 
 // Create a recognize stream
