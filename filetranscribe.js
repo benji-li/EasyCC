@@ -23,7 +23,7 @@ async function main() {
     
     const [response] = await client.recognize(request);
     const transcription = response.results.map(result =>
-        result.alternative[0].transcript).join('\n');
+        result.alternatives[0].transcript).join('\n');
         console.log(`Transcription: ${transcription}`);
 }
 main().catch(console.error);
