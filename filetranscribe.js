@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function main() {
     const client = new speech.SpeechClient();
-    const filename='./resources/brooklyn.flac';
+    const filename='./resources/audio.mp3';
 
     const file = fs.readFileSync(filename);
     const audioBytes = file.toString('base64');
@@ -12,7 +12,7 @@ async function main() {
         content: audioBytes
     };
     const config = {
-        encoding: 'FLAC',
+        encoding: 'MP3',
         sampleRateHertz: 16000,
         languageCode: 'en-US'
     };

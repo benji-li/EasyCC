@@ -18,7 +18,9 @@
   "homepage": "https://github.com/benjelloo/easycap#readme",
   "dependencies": {
     "@google-cloud/speech": "^4.2.0",
+    "chalk": "^4.1.0",
     "node-record-lpcm16": "^1.0.1",
-    "sox": "^0.1.0"
+    "sox": "^0.1.0",
+    "stream": "0.0.2"
   }
 }
