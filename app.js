@@ -64,9 +64,11 @@ app.get('/transcribe', (req, res) => {
     res.send({'message': transcription});
 });
 
-io.on("connection", socket => {
-    socket.emit("message", transcription);
-});
+io.on('connection', (socket) => {
+    socket.on('message', msg => {
+      io.emit('message', msg);
+    });
+  });
   
 
 app.listen(port, () => {
