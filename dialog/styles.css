@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(OpenSans-Regular.ttf);
+  }
+body {
+    background: #CCFFF9;
+}
+
+#captions {
+    position: absolute;
+    width: 1440px;
+    height: 82px;
+    left: 5px;
+    top: 0px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+    
+    color: #000000;
+
+
+}
