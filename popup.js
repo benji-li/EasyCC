@@ -5,14 +5,11 @@ document.addEventListener('DOMContentLoaded', function(){
         chrome.tabs.query({currentWindow: true,active:true},
         function(tabs){
             chrome.tabCapture.capture({audio:true, video:false},(stream)=>{
-                //sbubtitle stuff here using stream
-                
+                //sbubtitle stuff here using stream 
                 this.context = new AudioContext();
                 this.stream = this.context.createMediaStreamSource(stream);
                 this.stream.connect(this.context.destination);
-
             })
-
         }
             )
     }
