@@ -20,7 +20,7 @@ const request = {
 };
 
 // Create a recognize stream
-const recognizeStream = client
+export const recognizeStream = client
   .streamingRecognize(request)
   .on('error', console.error)
   .on('data', data => {
@@ -28,9 +28,14 @@ const recognizeStream = client
       data.results[0] && data.results[0].alternatives[0]
         ? `Transcription: ${data.results[0].alternatives[0].transcript}\n`
         : '\n\nReached transcription time limit, press Ctrl+C\n'
-    )
-  }
+      )
+      message = data.results[0].alternatives[0].transcript;
+      console.log(message);
+    }
   );
+
+let message = '';
+console.log(message);
 
 // Start recording and send the microphone input to the Speech API.
 // Ensure SoX is installed, see https://www.npmjs.com/package/node-record-lpcm16#dependencies
