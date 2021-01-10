@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
     function onclick(){
         chrome.tabs.query({currentWindow: true,active:true},
         function(tabs){
-            chrome.tabCapture.capture({audio:true, video:false},(stream)=>{
+            chrome.tabCapture.capture({audio:true},(stream)=>{
                 //sbubtitle stuff here using stream
 
             })
