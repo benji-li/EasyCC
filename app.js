@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const http = require("http").Server(app);
+const io = require("socket.io")(http);
 const port = 3000;
 
 const recorder = require('node-record-lpcm16');
@@ -61,6 +63,11 @@ app.use("/", express.static(__dirname + '/dialog'));
 app.get('/transcribe', (req, res) => {
     res.send({'message': transcription});
 });
+
+io.on("connection", socket => {
+    socket.emit("message", transcription);
+});
+  
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);

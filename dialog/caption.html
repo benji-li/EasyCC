@@ -15,5 +15,18 @@
 <body>
     <p id="captions">Waiting for a speaker!</p>
     <script src="script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+    </script>
+    <script>
+      const socket = io();
+    
+      socket.on("message", msg => {
+        console.log('message: ' + msg);
+        const captions = document.querySelector("#captions");
+        captions.textContent = msg;
+      });
+    </script>
 </body>
 </html>
