@@ -11,7 +11,7 @@ body {
     width: 1440px;
     height: 82px;
     left: 5px;
-    top: 0px;
+    margin-top:0px;
     
     font-family: Open Sans;
     font-style: normal;
