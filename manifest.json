@@ -11,11 +11,13 @@
         }
     ],
     "browser_action":{
+        "default_icon":"logo.png",
         "default_popup":"popup.html",
         "default_title":"Extension"  
     },
     "permissions": [
         "desktopCapture",
+        "activeTab",
         "storage",
         "tabs",
         "tabCapture"
