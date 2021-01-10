@@ -24,3 +24,25 @@ body {
 
 
 }
+
+.button{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    
+    right: 0px;
+    top: 170px;
+    padding: 10px;
+    margin-right: 10px;
+    
+    border: none;
+    background: none;
+
+    font-size: 13px;
+    font-weight:bold;
+    color:white;
+
+
+    background: rgba(0, 26, 255, 0.38);
+    border-radius: 40px;
+}
