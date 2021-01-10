@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('button').addEventListener('click',onclick,false)
     function onclick(){
-        chrome.windows.create();
+        chrome.windows.create({height:30,url:'http://www.google.com'});
         chrome.tabs.query({currentWindow: true,active:true},
         function(tabs){
             chrome.tabCapture.capture({audio:true, video:false},(stream)=>{
