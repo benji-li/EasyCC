@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function(){
     function onclick(){
         chrome.tabs.query({currentWindow: true,active:true},
         function(tabs){
-            chrome.tabs.sendMessage(tabs[0].id,'hi')
-            //LISTEN TO AUDIO
-            //ADD CAPTIONS ....
+            chrome.tabCapture.capture({audio:true, video:false},(stream)=>{
+                //sbubtitle stuff here using stream
+
+            })
+
         }
             )
     }
