@@ -16,3 +16,6 @@ Once you fork the repo, use  ```npm start``` to acquire all the dependencies and
 In order to set up the Google Cloud functionality, you will need to set up a Google Cloud project and obtain a project key. Then, set up an [environment variable](https://cloud.google.com/docs/authentication/getting-started)
 
 *Load Unpacked* in your Chrome extensions toolbar to initialize the extension, then run `app.js` to host the back-end. Simply click into the extension and activate to begin transcribing!
+
+
+**EasyCC was created by Andrew Wang, Benji Li, Shuhaib Mehri, and Yale Wang.**
