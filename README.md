@@ -1,6 +1,6 @@
 # EasyCC
 
-[NWHacks 2021 submission]
+[NWHacks 2021 Honourable Mention 🏆]
 
 EasyCC is a easy-to-use Chrome extension that performs real-time captioning for your video calls or online classes. It is compatible with all video calling clients and softwares, such as Zoom, Discord, Google Meet, Skypem, and more!
 
@@ -10,7 +10,7 @@ Personally, we have struggled with connection issues, professors who speak uncle
 
 For our hack we wanted to tackle this problem and create a tool that helps improve learning experiences and make classes more accessible for struggling students, with hopes of making a positive social impact by helping people communicate during a time filled with challenges and uncertainty. 
 
-## Try the Project
+## Try the Project!
 
 Once you fork the repo, use  ```npm start``` to acquire all the dependencies and necessary modules.
 In order to set up the Google Cloud functionality, you will need to set up a Google Cloud project and obtain a project key. Then, set up an [environment variable](https://cloud.google.com/docs/authentication/getting-started)
